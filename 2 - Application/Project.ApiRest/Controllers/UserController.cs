@@ -73,6 +73,7 @@ namespace Project.ApiRest.Controllers
             {
                 var _user = await _userRepository.GetById(user.Id);
 
+
                 if (_user != null)
                 {
                     _user.UserName = _user.UserName;
