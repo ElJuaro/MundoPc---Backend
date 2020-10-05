@@ -83,8 +83,6 @@ namespace Project.ApiRest.Controllers
                     _user.Role = _user.Role;
                     _user.Telephone = _user.Telephone;
 
-
-
                     await _userRepository.Update(_user);
                     return Ok(_user);
                 }
